@@ -23,7 +23,7 @@ public class GetQuestionRestController {
     public List<QuestionDTO> getQuestions(@PathVariable Integer categoryId, @RequestParam(required = false, defaultValue = "10") int limit) {
 
         List<Question> questions;
-
+// prueba
         try {
             questions = findQuestionsUseCase.findCategoryAndTypeAndAmount(categoryId, "multiple",  limit);
         } catch (IllegalArgumentException e) {
